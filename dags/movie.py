@@ -9,6 +9,10 @@ from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
 from pprint import pprint
 
+#경로, 삭제 관련 추가
+import os.path
+import shutil
+
 with DAG(
         'movie',
     default_args={
@@ -25,16 +29,27 @@ with DAG(
 ) as dag:
     
     def get_data(ds, **kwargs):
-        print("###############################")
+        #print("###############################")
         #print(ds)
         #print(kwargs)
-        print(f"ds_nodash => {kwargs['ds_nodash']}")
-        print(f"kwargs type => {type(kwargs)}")
-        print("###############################")
+        #print(f"ds_nodash => {kwargs['ds_nodash']}")
+        #print(f"kwargs type => {type(kwargs)}")
+        #print("###############################")
 
-        from mov.api.call import get_key
+        from mov.api.call import get_key, save2df
         key = get_key()
-        print(f"MOVIE_API_KEY => {key}")
+        #print(f"MOVIE_API_KEY => {key}")
+        YYYYMMDD = kwargs['ds_nodash'] #20240724
+
+        PARQUET_PATH = '/home/michael/tmp/test_parquet/load_dt=' + YYYYMMDD 
+        print("###############################")
+        print(PARQUET_PATH)
+        print("###############################")
+        if os.path.isdir(PARQUET_PATH):
+            shutil.rmtree(PARQUET_PATH)
+            print("DEL SUCCESS!!!!!")
+        df = save2df(YYYYMMDD)
+        print(df.head(5))
 
     def print_context(ds=None, **kwargs):
         #print(kwargs)
