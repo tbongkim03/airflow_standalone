@@ -5,6 +5,10 @@ from airflow import DAG
 
 from airflow.operators.bash import BashOperator
 from airflow.operators.empty import EmptyOperator
+
+from airflow.operators.python import PythonOperator
+from pprint import pprint
+
 with DAG(
         'movie',
     default_args={
@@ -19,13 +23,36 @@ with DAG(
     catchup=True,
     tags=['movie'],
 ) as dag:
+    
+    def get_data(ds, **kwargs):
+        print("###############################")
+        #print(ds)
+        #print(kwargs)
+        print(f"ds_nodash => {kwargs['ds_nodash']}")
+        print(f"kwargs type => {type(kwargs)}")
+        print("###############################")
 
-    task_get = BashOperator(
+        from mov.api.call import get_key
+        key = get_key()
+        print(f"MOVIE_API_KEY => {key}")
+
+    def print_context(ds=None, **kwargs):
+        #print(kwargs)
+        print(ds)
+        #print(f"ds_nodash => {kwargs['ds_nodash']}")
+        
+    run_this = PythonOperator(
+            task_id="print_the_context", 
+            python_callable=print_context
+    )
+
+    task_get = PythonOperator(
         task_id='get.data',
-        bash_command="""
-        GET_URL=""
+        #bash_command="""
+        #GET_URL=""
         #bash pip install git+${GET_URL}
-        """
+        #"""
+        python_callable=get_data
     )
     task_save = BashOperator(
         task_id="save.data",
@@ -74,3 +101,5 @@ with DAG(
 
     task_save >> [task_a, task_b, task_c, task_d] >> task_end
     task_err >> task_end
+
+    task_start >> run_this >> task_end
