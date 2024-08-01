@@ -1,0 +1,43 @@
+[2024-07-29 17:36:30 +0900] [306400] [INFO] Starting gunicorn 22.0.0
+[2024-07-29 17:36:30 +0900] [306400] [ERROR] Connection in use: ('::', 8793)
+[2024-07-29 17:36:30 +0900] [306400] [ERROR] Retrying in 1 second.
+[2024-07-29 17:36:31 +0900] [306400] [ERROR] Connection in use: ('::', 8793)
+[2024-07-29 17:36:31 +0900] [306400] [ERROR] Retrying in 1 second.
+[2024-07-29 17:36:32 +0900] [306400] [ERROR] Connection in use: ('::', 8793)
+[2024-07-29 17:36:32 +0900] [306400] [ERROR] Retrying in 1 second.
+[2024-07-29 17:36:33 +0900] [306400] [ERROR] Connection in use: ('::', 8793)
+[2024-07-29 17:36:33 +0900] [306400] [ERROR] Retrying in 1 second.
+[2024-07-29 17:36:34 +0900] [306400] [ERROR] Connection in use: ('::', 8793)
+[2024-07-29 17:36:34 +0900] [306400] [ERROR] Retrying in 1 second.
+[2024-07-29 17:36:35 +0900] [306400] [ERROR] Can't connect to ('::', 8793)
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/operators/python.py:410 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/operators/python.py:410 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/operators/python.py:410 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/operators/python.py:410 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/operators/python.py:410 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/operators/python.py:410 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/operators/python.py:410 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/operators/python.py:410 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/operators/python.py:410 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/operators/python.py:410 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/operators/python.py:410 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/models/baseoperator.py:485 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+/home/michael/.pyenv/versions/air/lib/python3.11/site-packages/airflow/operators/python.py:410 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
