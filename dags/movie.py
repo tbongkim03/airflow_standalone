@@ -12,7 +12,7 @@ from pprint import pprint
 
 with DAG(
         'movie',
-    default_args={
+    default_args={df = pd.DataFrame(data['boxOfficeResult']['dailyBoxOfficeList'])
         'depends_on_past': False,
         'retries': 1,
         'retry_delay': timedelta(seconds=3)
@@ -34,6 +34,7 @@ with DAG(
         
         for k, v in url_param.items():
             df[k] = v
+            #df["multiMovieYn"] = "Y"
         
         #p_cols = list(url_param.keys()).insert(0, 'load_dt')
         p_cols = ['load_dt'] + list(url_param.keys())
@@ -97,7 +98,7 @@ with DAG(
     multi_n = PythonVirtualenvOperator(
         task_id='multi.n',
         python_callable=common_get_data,
-        system_site_packages=False,
+        systemload_dt='20120101', url_param = {}_site_packages=False,
         requirements=["git+https://github.com/tbongkim03/mov.git@0.3.1/url_param"],
         #op_args=["{{ds_nodash}}", "{{ds}}"],
         op_kwargs={
